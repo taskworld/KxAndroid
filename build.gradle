@@ -15,6 +15,7 @@ buildscript {
 
 allprojects {
     ext {
+        group_name = "com.github.taskworld.kxandroid"
         kx_android_version = "0.1.0"
         kx_android = 'kxandroid'
 
