@@ -1,1 +1,1 @@
-include ':kxandroid', ':example', ':kxandroid-glide', ':kxandroid-realm', ':kxandroid-gson'
+include ':kxandroid', ':example', ':kxandroid-glide', ':kxandroid-realm', ':kxandroid-gson', ':kxandroid-support-v4', ':kxandroid-appcompat-v7', ':kxandroid-support-design'

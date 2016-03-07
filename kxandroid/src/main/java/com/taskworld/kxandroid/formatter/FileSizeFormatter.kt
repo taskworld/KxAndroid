@@ -1,6 +1,6 @@
 package com.taskworld.kxandroid.util.formatter
 
-import com.taskworld.kxandroid.extension.rounded
+import com.taskworld.kxandroid.rounded
 
 
 /**
