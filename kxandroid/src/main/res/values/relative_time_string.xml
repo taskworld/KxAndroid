@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="relative_time_seconds">
+        <item quantity="zero">a few seconds</item>
+        <item quantity="one">a few seconds</item>
+        <item quantity="two">a few seconds</item>
+        <item quantity="few">a few seconds</item>
+        <item quantity="many">%1$d seconds</item>
+        <item quantity="other">%1$d seconds</item>
+    </plurals>
+
+    <plurals name="relative_time_minutes">
+        <item quantity="one">a minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+
+    <plurals name="relative_time_hours">
+        <item quantity="one">an hour</item>
+        <item quantity="other">%1$d hours</item>
+    </plurals>
+
+    <plurals name="relative_time_days">
+        <item quantity="one">a day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+
+    <plurals name="relative_time_weeks">
+        <item quantity="one">a week</item>
+        <item quantity="other">%1$d weeks</item>
+    </plurals>
+
+    <plurals name="relative_time_months">
+        <item quantity="one">a month</item>
+        <item quantity="other">%1$d months</item>
+    </plurals>
+
+    <plurals name="relative_time_years">
+        <item quantity="one">a year</item>
+        <item quantity="other">%1$d years</item>
+    </plurals>
+</resources>
