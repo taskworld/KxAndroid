@@ -13,7 +13,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.taskworld.kxandroid'
+group = 'com.github.taskworld'
 
 android {
     compileSdkVersion 23
