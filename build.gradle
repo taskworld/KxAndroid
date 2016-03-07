@@ -24,7 +24,8 @@ allprojects {
 //        licences = ['MIT']
 //        upload_name = 'KxAndroid'
 //        website = 'https://github.com/taskworld/KxAndroid'
-
+        realm_version = '0.87.0'
+        glide_version = '3.6.1'
         kotlin_version = "1.0.0"
         support_version = '23.2.0'
         robolectric_version = '3.0'

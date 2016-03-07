@@ -1,1 +1,1 @@
-include ':kxandroid',':example'
+include ':kxandroid', ':example', ':kxandroid-glide', ':kxandroid-realm'
