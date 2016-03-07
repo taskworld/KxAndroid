@@ -16,16 +16,13 @@ buildscript {
 allprojects {
     ext {
         group_name = "com.github.taskworld.kxandroid"
+
         kx_android_version = "0.1.0"
+
         kx_android = 'kxandroid'
 
-//        auto_publish = true
-//        desc = 'Kotlin extension for Android'
-//        group_id = 'com.taskworld.kxandroid'
-//        licences = ['MIT']
-//        upload_name = 'KxAndroid'
-//        website = 'https://github.com/taskworld/KxAndroid'
         realm_version = '0.87.0'
+        gson_version = '2.4'
         glide_version = '3.6.1'
         kotlin_version = "1.0.0"
         support_version = '23.2.0'
