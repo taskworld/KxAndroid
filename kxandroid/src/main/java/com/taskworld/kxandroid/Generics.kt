@@ -10,7 +10,6 @@ import android.view.WindowManager
  */
 
 inline fun <reified T : Any> T.logD(msg: Any, tag: String = tag()) {
-
     Log.d(tag, msg.toString())
 }
 

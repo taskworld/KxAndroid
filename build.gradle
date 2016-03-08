@@ -21,9 +21,6 @@ allprojects {
 
         kx_android = 'kxandroid'
 
-        realm_version = '0.87.0'
-        gson_version = '2.4'
-        glide_version = '3.6.1'
         kotlin_version = "1.0.0"
         support_version = '23.2.0'
         robolectric_version = '3.0'
