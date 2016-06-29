@@ -6,8 +6,8 @@ import java.text.DecimalFormat
  * Created by verachadw on 1/19/2016 AD.
  */
 
-fun Double.format(precision: Int = 0): String {
-    var formatBuilder = StringBuilder("##")
+fun Double.format(precision: Int = 1): String {
+    val formatBuilder = StringBuilder("##")
     if (precision > 0) {
         formatBuilder.append(".")
         for (i in 0..precision - 1) {
@@ -18,6 +18,9 @@ fun Double.format(precision: Int = 0): String {
     return formatter.format(this).toString()
 }
 
-fun Double.rounded(precision: Int = 0): Double {
+fun Float.format(precision: Int = 1) = this.toDouble().format(precision)
+
+fun Double.rounded(precision: Int = 1): Double {
     return this.format(precision).toDouble()
 }
+
