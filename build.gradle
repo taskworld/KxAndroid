@@ -18,10 +18,8 @@ allprojects {
     ext {
         group_name = "com.github.taskworld.kxandroid"
 
-        kx_android_version = "0.1.0"
-
         kx_android = 'kxandroid'
-
+        kx_android_version = "0.1.0"
         kotlin_version = "1.0.3"
         support_version = '24.1.1'
         robolectric_version = '3.0'
@@ -55,6 +53,9 @@ configure(subprojects - project(':example')) {
                 minifyEnabled false
                 proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             }
+        }
+        sourceSets {
+            main.java.srcDirs += 'src/main/kotlin'
         }
     }
     dependencies {

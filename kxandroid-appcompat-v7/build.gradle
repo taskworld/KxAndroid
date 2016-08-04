@@ -1,7 +1,0 @@
-dependencies {
-    compile project(':kxandroid')
-    //android support lib
-    provided "com.android.support:appcompat-v7:$support_version"
-    provided "com.android.support:recyclerview-v7:$support_version"
-}
-
