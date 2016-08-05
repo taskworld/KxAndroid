@@ -1,6 +1,5 @@
 dependencies {
     compile project(':kxandroid')
-    //android support lib
+
     provided "com.android.support:support-v4:$support_version"
 }
-

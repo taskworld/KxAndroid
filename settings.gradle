@@ -1,1 +1,7 @@
-include ':kxandroid', ':example', ':kxandroid-support-v4', ':kxandroid-appcompat-v7', ':kxandroid-support-design'
+include ':kxandroid',
+        ':kxandroid-formatter',
+        ':kxandroid-support-design',
+        ':kxandroid-support-v4',
+        ':kxandroid-support-v7-appcompat',
+        ':kxandroid-support-v7-recyclerview',
+        ':example'

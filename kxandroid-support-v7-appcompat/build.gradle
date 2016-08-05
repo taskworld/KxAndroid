@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':kxandroid')
+
+    provided "com.android.support:appcompat-v7:$support_version"
+}

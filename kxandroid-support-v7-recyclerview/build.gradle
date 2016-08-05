@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':kxandroid')
+
+    provided "com.android.support:recyclerview-v7:$support_version"
+}
