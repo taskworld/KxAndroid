@@ -6,7 +6,9 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.0-alpha7'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.3"
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.netflix.nebula:gradle-extra-configurations-plugin:3.0.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -22,13 +24,44 @@ allprojects {
         kx_android = 'kxandroid'
 
         kotlin_version = "1.0.3"
-        support_version = '24.0.0'
+        support_version = '24.1.1'
         robolectric_version = '3.0'
         junit_version = '4.12'
         timber_version = '2.5.1'
     }
     repositories {
         jcenter()
+    }
+}
+
+configure(subprojects - project(':example')) {
+
+    apply plugin: 'com.android.library'
+    apply plugin: 'kotlin-android'
+    apply plugin: 'com.github.dcendents.android-maven'
+
+    group = parent.ext.group_name
+
+    android {
+        compileSdkVersion 24
+        buildToolsVersion "24.0.1"
+
+        defaultConfig {
+            minSdkVersion 15
+            targetSdkVersion 24
+            versionCode 1
+            versionName "1.0"
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+    }
+    dependencies {
+        compile "org.jetbrains.kotlin:kotlin-stdlib:$parent.ext.kotlin_version"
+        testCompile "junit:junit:$parent.ext.junit_version"
     }
 }
 
